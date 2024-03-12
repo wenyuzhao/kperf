@@ -2,6 +2,14 @@
 name = "kperf"
 version = "0.1.0"
 edition = "2021"
+description = "A simple macOS `kpc_*` instrumentation API wrapper."
+repository = "https://github.com/wenyuzhao/kperf"
+homepage = "https://github.com/wenyuzhao/kperf"
+documentation = "https://docs.rs/kperf"
+categories = ["development-tools::profiling"]
+keywords = ["performance", "measure", "instrument"]
+authors = ["Wenyu Zhao <wenyuzhaox@gmail.com>"]
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
