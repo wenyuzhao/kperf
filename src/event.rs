@@ -51,7 +51,7 @@ impl From<&'static str> for Event {
             "instructions" => Event::Instructions,
             "branches" => Event::Branches,
             "branch-misses" => Event::BranchMisses,
-            _ => panic!("invalid event name"),
+            _ => panic!("Invalid event name: {s}"),
         }
     }
 }
