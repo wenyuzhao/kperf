@@ -10,12 +10,8 @@ pub enum KPerfError {
     DeinitError,
     #[error("failed to enable kperf event")]
     InvalidEvent,
-    #[error("failed to disable kperf")]
-    DisableCountingFailed,
     #[error("failed to fetch counter values")]
-    FetchCountersFailed,
-    // #[error("invalid header (expected {expected:?}, found {found:?})")]
-    // InvalidHeader { expected: String, found: String },
+    CounterFetchError,
     #[error("unknown error")]
     Unknown,
 }

@@ -109,7 +109,7 @@ impl KPerf {
 
     unsafe fn get_counter_values(buf: &mut [u64; Self::MAX_COUNTERS]) -> Result<(), KPerfError> {
         if kpc_get_thread_counters(0, Self::MAX_COUNTERS as _, buf.as_mut_ptr()) != 0 {
-            return Err(KPerfError::FetchCountersFailed);
+            return Err(KPerfError::CounterFetchError);
         }
         Ok(())
     }
